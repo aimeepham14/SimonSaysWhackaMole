@@ -10,7 +10,7 @@ Can you help Simon pop the mole back into the hole? the There are 4 moles in 4 d
 
 ### TechStack Being Used
 * HTML/CSS
-* JavasScript (DOM)
+* JavaScript (DOM)
 
 
 ### MVP
@@ -29,3 +29,8 @@ Can you help Simon pop the mole back into the hole? the There are 4 moles in 4 d
 * Set a countdown timer
 * Set the interval for the mole color to pop up quicker every 10 additional sequences
 * Set a "highest score" counter
+* Creating a cool mouse cursor that looks like a hammer
+
+### Any Potential Roadblocks
+* The visual of the "moles popping up" may not look right
+* The computer not accepting the player's sequence
