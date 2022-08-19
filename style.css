@@ -9,13 +9,27 @@ h1 {
     color: #9f5a3e
 }
 
+h2 {
+    font-family: 'Slackey', cursive;
+    text-align: center;
+    color: rgb(225, 114, 114);
+    font-size: 20px;
+}
+
 /* Styling the Start and Reset Buttons */
+
+.button {
+    margin: 0 ;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
 
 #start {
     text-align: center;
     font-family: 'Slackey', cursive;
-    display: flex;
-    margin: auto;
+    display: inline;
+    margin: 0 auto;
     padding: 10px 20px;
     font-size: 20px;
     cursor: pointer;
@@ -40,7 +54,7 @@ h1 {
     text-align: center;
     margin: auto;
     font-family: 'Slackey', cursive;
-    display: flex;
+    display: inline;
     padding: 10px 20px;
     font-size: 20px;
     cursor: pointer;
@@ -61,29 +75,42 @@ h1 {
     transform: translateY(4px);
 }
 
-.gameboard {
-    justify-content: center;
-    align-content: center;
+/* Styling the Round Counter */
+
+.counter-container {
+    text-align: center;
+    font-family: 'Freckle Face', cursive;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    padding: 0px 0px 0px 0px;
+    border: 0.5px solid white;
+    margin: 0px 200px 100px 50px;
 }
+
 
 .moles {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 50vh;
     gap: .5rem;
     border: 2px solid chartreuse;
     width: 500px;
-    align-content: center;
+    height: 500px;
+    align-items: center;
+    margin: 100px 100px 100px 100px;
 }
 
 #moleOne, #moleTwo {
     text-align: center;
     width: 200px;
-    height: auto;
+    height: 100px;
+    margin: 50px 100px 300px 100px;
 }
 
 #moleThree, #moleFour {
     text-align: center;
     width: 200px;
-    height: auto;
+    height: 100px;
+    margin: 50px 100px 800px 100px;
 }
