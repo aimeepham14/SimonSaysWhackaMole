@@ -5,8 +5,8 @@
 Can you help Simon pop the mole back into the hole? the There are 4 moles in 4 different colored holes. After the player clicks start, one of the colored moles will pop up. The player will need to "whack the mole" that popped up. After each successful round, the game will add another mole to the series which will require the player to repeat the same sequence order.
 
 ### Wireframe
-<!-- Link to Wireframe -->
-[Google Drive](https://drive.google.com/file/d/1BvD72wz6HgqB967hqD6-0ljcU44eYwm_/view?usp=sharing)
+<!-- local image -->
+![Wireframe Image](https://i.imgur.com/3RGUIZj.png)
 
 ### TechStack Being Used
 * HTML/CSS
