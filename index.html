@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
     <title>Simon Says Whack-A-Mole</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Slackey&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <h1>Simon Says Whack-A-Mole</h1>
     <div class="game-board">
-        <div class="moles" id="moleOne">Mole 1</div>
-        <div class="moles" id="moleTwo">Mole 2</div>
-        <div class="moles" id="moleThree">Mole 3</div>
-        <div class="moles" id="moleFour">Mole 4</div>
+        <div class="button">
+            <button id="start">START</button>
+            <button id="restart">RESTART</button>
+        </div>
+        <div class="moles">
+            <input type="image" src="https://i.imgur.com/HBv5lQg.png" name="button" class="mole-button" id="moleOne" />
+            <input type="image" src="https://i.imgur.com/HBv5lQg.png" name="button" class="mole-button" id="moleTwo" />
+            <input type="image" src="https://i.imgur.com/HBv5lQg.png" name="button" class="mole-button" id="moleThree" />
+            <input type="image" src="https://i.imgur.com/HBv5lQg.png" name="button" class="mole-button" id="moleFour" />
+        </div>
+         <div class="counter-container">
+            <div>
+                <p>Round: </p>
+                <div class="round-score"></div>
+            </div>
+        </div>
     </div>
 
     <script type="text/javascript" src="js/script.js"></script>
 </body>
-
-
-
-
-
-
-
 
 
 </html>

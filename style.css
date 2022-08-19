@@ -1,0 +1,89 @@
+body {
+    background-image: url(https://i.imgur.com/XI3RqSf.jpg)
+}
+
+h1 {
+    font-family: 'Freckle Face', cursive;
+    text-align: center;
+    font-size: 65px;
+    color: #9f5a3e
+}
+
+/* Styling the Start and Reset Buttons */
+
+#start {
+    text-align: center;
+    font-family: 'Slackey', cursive;
+    display: flex;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 px #999;
+}
+
+#start:hover {background-color: #3e8e41}
+
+#start:active {
+    background-color: #3e8341;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#restart {
+    text-align: center;
+    margin: auto;
+    font-family: 'Slackey', cursive;
+    display: flex;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #e68c58;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 px #999;
+}
+
+#restart:hover {background-color: #d78560}
+
+#restart:active {
+    background-color: #bb5008;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.gameboard {
+    justify-content: center;
+    align-content: center;
+}
+
+.moles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: .5rem;
+    border: 2px solid chartreuse;
+    width: 500px;
+    align-content: center;
+}
+
+#moleOne, #moleTwo {
+    text-align: center;
+    width: 200px;
+    height: auto;
+}
+
+#moleThree, #moleFour {
+    text-align: center;
+    width: 200px;
+    height: auto;
+}
