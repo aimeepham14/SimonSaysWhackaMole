@@ -11,25 +11,22 @@
 
 </head>
 <body>
+    <header>
     <h1>Simon Says Whack-A-Mole</h1>
     <h2>Repeat the same color sequence as the moles below! </h2>
+    </header>
     <div class="game-board">
         <div class="button">
             <button id="start">START</button>
             <button id="restart">RESTART</button>
         </div>
-        <div class="counter-container">
-            <div>
-                <p>Round: </p>
-                <div class="round-score"></div>
-            </div>
-        </div>
-        <div class="moles">
-            <input type="image" src="https://i.imgur.com/HBv5lQg.png" name="button" class="mole-button" id="moleOne" />
-            <input type="image" src="https://i.imgur.com/HBv5lQg.png" name="button" class="mole-button" id="moleTwo" />
-            <input type="image" src="https://i.imgur.com/HBv5lQg.png" name="button" class="mole-button" id="moleThree" />
-            <input type="image" src="https://i.imgur.com/HBv5lQg.png" name="button" class="mole-button" id="moleFour" />
-        </div>
+        <div class="counter-container"> Round: </div>
+        <section class="moles">
+            <div class="mole-button-one" data-tile="one">one</div>
+            <div class="mole-button-two" data-tile="two">two</div>
+            <div class="mole-button-three" data-tile="three">three</div>
+            <div class="mole-button-four" data-tile="four">four</div>
+        </section>
     </div>
 
     <script type="text/javascript" src="js/script.js"></script>

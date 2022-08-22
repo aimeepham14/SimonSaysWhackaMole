@@ -16,10 +16,17 @@ h2 {
     font-size: 20px;
 }
 
+.game-board {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
 /* Styling the Start and Reset Buttons */
 
 .button {
-    margin: 0 ;
+    margin: 0, auto;
     display: flex;
     flex-direction: center;
     justify-content: center;
@@ -78,30 +85,39 @@ h2 {
 /* Styling the Round Counter */
 
 .counter-container {
-    text-align: center;
     font-family: 'Freckle Face', cursive;
     text-align: center;
     font-size: 40px;
+    line-height: 200px;
     color: white;
-    padding: 0px 0px 0px 0px;
-    border: 0.5px solid white;
-    margin: 0px 200px 100px 50px;
+    margin: 
+    padding: 20px 50px 50px 50px;
 }
 
+
+/* Mole holes */
 
 .moles {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50vh;
-    gap: .5rem;
-    border: 2px solid chartreuse;
-    width: 500px;
-    height: 500px;
-    align-items: center;
-    margin: 100px 100px 100px 100px;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 300px 300px;
+    grid-gap: 50px;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
-#moleOne, #moleTwo {
+.mole-button-one, .mole-button-two, .mole-button-three, .mole-button-four {
+    background: url('https://i.imgur.com/HBv5lQg.png') bottom center no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+
+}
+
+
+/* #moleOne, #moleTwo {
     text-align: center;
     width: 200px;
     height: 100px;
@@ -113,4 +129,6 @@ h2 {
     width: 200px;
     height: 100px;
     margin: 50px 100px 800px 100px;
-}
+} */
+
+
