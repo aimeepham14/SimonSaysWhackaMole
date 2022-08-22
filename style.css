@@ -109,26 +109,27 @@ h2 {
 }
 
 .mole-button-one, .mole-button-two, .mole-button-three, .mole-button-four {
-    background: url('https://i.imgur.com/HBv5lQg.png') bottom center no-repeat;
+    /* background: url('https://i.imgur.com/HBv5lQg.png') bottom center no-repeat; */
     background-size: contain;
     background-position-x: center;
     background-position-y: center;
+    transition: 0.15s;
+    background-color: #f25022;
+  box-shadow: 0 0 0 1px #f25022 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #c93a12, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
 
 }
 
-
-/* #moleOne, #moleTwo {
-    text-align: center;
-    width: 200px;
-    height: 100px;
-    margin: 50px 100px 300px 100px;
+.mole-button-one:hover
+.mole-button-one:focus {
+  background-color: #ff451a;
+  box-shadow: 0 0 0 1px #FF3000 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 10px 0 0 #e62b00, 0 10px 0 1px rgba(0, 0, 0, 0.4), 0 10px 8px 1px rgba(0, 0, 0, 0.6);
 }
 
-#moleThree, #moleFour {
-    text-align: center;
-    width: 200px;
-    height: 100px;
-    margin: 50px 100px 800px 100px;
-} */
+.mole-button-one:active,
+.mole-button-one.activated {
+  box-shadow: 0 0 0 1px #ff5c36 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+  background-color: #ff5c36;
+  transform: translateY(10px);
+}
 
 
