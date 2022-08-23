@@ -1,6 +1,9 @@
 body {
-    background-image: url(https://i.imgur.com/XI3RqSf.jpg)
-}
+    background-image: url(https://i.imgur.com/XI3RqSf.jpg);
+    top: 0;
+    width: 100%;
+    height: 100%
+  }
 
 h1 {
     font-family: 'Freckle Face', cursive;
@@ -14,22 +17,28 @@ h2 {
     text-align: center;
     color: rgb(225, 114, 114);
     font-size: 20px;
+    position: relative;
 }
 
 .game-board {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -30%);
+    transform: translate(-50%, -20%);
 }
 
 /* Styling the Start and Reset Buttons */
 
 .button {
-    margin: 0, auto;
-    display: flex;
-    flex-direction: center;
+    margin-top: -5rem;
+    /* display: flex; */
+    /* flex-direction: center; */
+    /* align-self: center;
     justify-content: center;
+    position: absolute; */
+    /* transform: translate(200px, -50px); */
+    position: relative;
+    display: flex;
 }
 
 #start {
@@ -88,10 +97,10 @@ h2 {
     font-family: 'Freckle Face', cursive;
     text-align: center;
     font-size: 40px;
-    line-height: 200px;
+    line-height: 100px;
     color: white;
-    margin: 
     padding: 20px 50px 50px 50px;
+    transform: translate(-10%, 0%);
 }
 
 
@@ -108,16 +117,38 @@ h2 {
     text-align: center;
 }
 
-.mole-button-one, .mole-button-two, .mole-button-three, .mole-button-four {
-    /* background: url('https://i.imgur.com/HBv5lQg.png') bottom center no-repeat; */
+.mole-button-one {
+    background: url('https://i.imgur.com/gxSkXY3.png') bottom center no-repeat;
     background-size: contain;
     background-position-x: center;
     background-position-y: center;
     transition: 0.15s;
-    background-color: #f25022;
-  box-shadow: 0 0 0 1px #f25022 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #c93a12, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
-
 }
+
+.mole-button-two {
+  background: url('https://i.imgur.com/WA3hCjZ.png') bottom center no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: center;
+  transition: 0.15s;
+}
+
+.mole-button-three {
+  background: url('https://i.imgur.com/Og89fIb.png') bottom center no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: center;
+  transition: 0.15s;
+}
+
+.mole-button-four {
+  background: url('https://i.imgur.com/6EfK8sl.png') bottom center no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: center;
+  transition: 0.15s;
+}
+
 
 .dont-click {
     pointer-events: none;
@@ -125,61 +156,25 @@ h2 {
 
 /* TESTING */
 
-.mole-button-one:hover,
-.mole-button-one:focus
-  {
-  background-color: #ff451a;
-  box-shadow: 0 0 0 1px #FF3000 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 10px 0 0 #e62b00, 0 10px 0 1px rgba(0, 0, 0, 0.4), 0 10px 8px 1px rgba(0, 0, 0, 0.6);
-}
-
 .mole-button-one:active,
-.mole-button-one.activated
- {
-  box-shadow: 0 0 0 1px #ff5c36 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
-  background-color: #ff5c36;
-  transform: translateY(10px);
-}
-.mole-button-two:hover,
-.mole-button-two:focus
-  {
-  background-color: #ff451a;
-  box-shadow: 0 0 0 1px #FF3000 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 10px 0 0 #e62b00, 0 10px 0 1px rgba(0, 0, 0, 0.4), 0 10px 8px 1px rgba(0, 0, 0, 0.6);
+.mole-button-one.activated {
+  transform:scale(1.2);
 }
 
 .mole-button-two:active,
-.mole-button-two.activated
- {
-  box-shadow: 0 0 0 1px #ff5c36 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
-  background-color: #ff5c36;
-  transform: translateY(10px);
-}
-.mole-button-three:hover,
-.mole-button-three:focus
-  {
-  background-color: #ff451a;
-  box-shadow: 0 0 0 1px #FF3000 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 10px 0 0 #e62b00, 0 10px 0 1px rgba(0, 0, 0, 0.4), 0 10px 8px 1px rgba(0, 0, 0, 0.6);
+.mole-button-two.activated {
+  transform:scale(1.2);
 }
 
 .mole-button-three:active,
-.mole-button-three.activated
- {
-  box-shadow: 0 0 0 1px #ff5c36 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
-  background-color: #ff5c36;
-  transform: translateY(10px);
-}
-.mole-button-four:hover,
-.mole-button-four:focus
-  {
-  background-color: #ff451a;
-  box-shadow: 0 0 0 1px #FF3000 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 10px 0 0 #e62b00, 0 10px 0 1px rgba(0, 0, 0, 0.4), 0 10px 8px 1px rgba(0, 0, 0, 0.6);
+.mole-button-three.activated {
+  transform:scale(1.2);
 }
 
 .mole-button-four:active,
-.mole-button-four.activated
- {
-  box-shadow: 0 0 0 1px #ff5c36 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
-  background-color: #ff5c36;
-  transform: translateY(10px);
+.mole-button-four.activated {
+  transform:scale(1.2);
 }
+
 
 

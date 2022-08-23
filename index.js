@@ -13,6 +13,7 @@ const heading = document.querySelector('.player-container');
 
 //Creating restart button
 function restartGame(text) {
+    alert(text);
     computerSequence = [];
     playerSequence = [];
     round = 0;
@@ -67,6 +68,7 @@ const nextSequence = [...computerSequence];
 nextSequence.push(nextStep());
 playRound(nextSequence);
 
+
 //adding a delay after the computer is done with the sequence so the player can execute the sequence
 computerSequence = [...nextSequence];
  setTimeout(() => {
@@ -81,15 +83,16 @@ function handleClick(tile) {
     
     const remainingClicks = computerSequence.length - playerSequence.length;
 
+
 //restart game if the player does not match computer
     if(playerSequence[index] !== computerSequence[index]) {
-        restartGame();
+        restartGame('Game over, try again!');
         return;
     }
 
     if (playerSequence.length === computerSequence.length) {
         playerSequence = [];
-        info.textContent = 'Correct! Next Round';
+        // info.textContent = 'Correct! Next Round';
         setTimeout(() => {
             nextRound();
         }, 1000);
