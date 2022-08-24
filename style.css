@@ -98,25 +98,25 @@ h2 {
     font-family: 'Freckle Face', cursive;
     text-align: center;
     font-size: 40px;
-    line-height: 100px;
-    color: rgb(247, 247, 247);
+    line-height: 15px;
+    color: rgb(218, 62, 62);
     padding: 20px 50px 50px 50px;
-    transform: translate(-10%, 0%);
+    transform: translate(0%, -35%);
 }
 
 
 /* Mole holes */
 
 .button-container {
-    display: grid;
-    grid-template-rows: 200px 200px;
+    margin: 0 auto;
+    width:400px;
+    height:400px;
+    display:grid;
     grid-template-columns: 200px 200px;
-    grid-gap: 5px;
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 200px;
-    text-align: center;
+    grid-row: auto auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+
 }
 
 .mole-button-one {
