@@ -6,10 +6,12 @@ let round = 0;
 
 // selecting the start button and creating a new start game function when the button is clicked
 
-const startButton = document.querySelector('#start');
-const counterContainer = document.querySelector('.counter-container')
-// THE PLAYER'S TURN
-const heading = document.querySelector('.player-container');
+const startButton = document.querySelector('.start');
+
+const currentCount = document.querySelector('.js-counter');
+
+const buttonContainer = document.querySelector('.js-container');
+
 
 //Creating restart button
 function restartGame(text) {
@@ -17,12 +19,12 @@ function restartGame(text) {
     computerSequence = [];
     playerSequence = [];
     round = 0;
-    counterContainer.classList.add('dont-click');
+    buttonContainer.classList.add('dont-click');
 }
 
 //to indicate that the computer is finished and it's the player's turn
 function playerTurn(round) {
-    counterContainer.classList.remove('dont-click');
+    buttonContainer.classList.remove('dont-click');
     // info.textContent = `Your turn: ${round}' Tap${round > 1 ? 's' : ''}`;
 }
 
@@ -60,9 +62,9 @@ function nextRound() {
 
 
 //adding to the counter after each round
-counterContainer.classList.add('dont-click');
+buttonContainer.classList.add('dont-click');
 
-heading.textContent = `Round ${round}`;
+currentCount.textContent = `Round ${round}`;
 
 const nextSequence = [...computerSequence];
 nextSequence.push(nextStep());
@@ -91,19 +93,17 @@ function handleClick(tile) {
     }
 
     if (playerSequence.length === computerSequence.length) {
+        if (playerSequence.length === 20) {
+            restartGame('Congrats! You completed all the rounds');
+            return
+        }
         playerSequence = [];
-        // info.textContent = 'Correct! Next Round';
         setTimeout(() => {
             nextRound();
         }, 1000);
         return;
     }
-
-    info.textContent = `Your turn: ${remainingClicks} Tap${
-        remainingClicks > 1 ? 's' : ''
-    }`;
 }
-
 //activate when the start button is clicked
 
 function startGame() {
@@ -112,17 +112,8 @@ function startGame() {
 
 startButton.addEventListener('click', startGame);
 //detecting whehter to move to the next round or end game
-counterContainer.addEventListener('click', event => {
+buttonContainer.addEventListener('click', event => {
     const { tile } = event.target.dataset;
 
     if (tile) handleClick(tile);
 });
-
-
-
-
-
-
-
-
-

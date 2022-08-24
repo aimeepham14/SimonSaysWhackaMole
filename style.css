@@ -8,7 +8,7 @@ body {
 h1 {
     font-family: 'Freckle Face', cursive;
     text-align: center;
-    font-size: 65px;
+    font-size: 40px;
     color: #9f5a3e
 }
 
@@ -21,10 +21,10 @@ h2 {
 }
 
 .game-board {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, 15%);
 }
 
 /* Styling the Start and Reset Buttons */
@@ -41,7 +41,7 @@ h2 {
     display: flex;
 }
 
-#start {
+.start {
     text-align: center;
     font-family: 'Slackey', cursive;
     display: inline;
@@ -58,9 +58,9 @@ h2 {
     box-shadow: 0 px #999;
 }
 
-#start:hover {background-color: #3e8e41}
+.start:hover {background-color: #3e8e41}
 
-#start:active {
+.start:active {
     background-color: #3e8341;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
@@ -93,12 +93,12 @@ h2 {
 
 /* Styling the Round Counter */
 
-.counter-container {
+.current-count {
     font-family: 'Freckle Face', cursive;
     text-align: center;
     font-size: 40px;
     line-height: 100px;
-    color: white;
+    color: rgb(247, 247, 247);
     padding: 20px 50px 50px 50px;
     transform: translate(-10%, 0%);
 }
@@ -106,20 +106,21 @@ h2 {
 
 /* Mole holes */
 
-.moles {
+.button-container {
     display: grid;
-    grid-template-rows: 300px 300px;
-    grid-template-columns: 300px 300px;
-    grid-gap: 50px;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 200px 200px;
+    grid-gap: 5px;
     position: relative;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 200px;
     text-align: center;
 }
 
 .mole-button-one {
     background: url('https://i.imgur.com/gxSkXY3.png') bottom center no-repeat;
-    background-size: contain;
+    background-size: 200px;
     background-position-x: center;
     background-position-y: center;
     transition: 0.15s;
@@ -127,7 +128,7 @@ h2 {
 
 .mole-button-two {
   background: url('https://i.imgur.com/WA3hCjZ.png') bottom center no-repeat;
-  background-size: contain;
+  background-size: 200px;
   background-position-x: center;
   background-position-y: center;
   transition: 0.15s;
@@ -135,7 +136,7 @@ h2 {
 
 .mole-button-three {
   background: url('https://i.imgur.com/Og89fIb.png') bottom center no-repeat;
-  background-size: contain;
+  background-size: 200px;
   background-position-x: center;
   background-position-y: center;
   transition: 0.15s;
@@ -143,7 +144,7 @@ h2 {
 
 .mole-button-four {
   background: url('https://i.imgur.com/6EfK8sl.png') bottom center no-repeat;
-  background-size: contain;
+  background-size: 200px;
   background-position-x: center;
   background-position-y: center;
   transition: 0.15s;

@@ -17,16 +17,15 @@
     </header>
     <div class="game-board">
         <div class="button">
-            <button id="start">START</button>
+            <button class="start-button start">START</button>
             <button id="restart">RESTART</button>
         </div>
-        <div class="counter-container player-container"> Round: </div>
-        <p class="dont-click"></p>
-        <section class="moles">
-            <div class="mole-button-one" data-tile="one">one</div>
-            <div class="mole-button-two" data-tile="two">two</div>
-            <div class="mole-button-three" data-tile="three">three</div>
-            <div class="mole-button-four" data-tile="four">four</div>
+        <div class="current-count js-counter"> Round: </div>
+        <section class="button-container js-container dont-click">
+            <div class="mole-button-one" data-tile="one"></div>
+            <div class="mole-button-two" data-tile="two"></div>
+            <div class="mole-button-three" data-tile="three"></div>
+            <div class="mole-button-four" data-tile="four"></div>
         </section>
     </div>
 
