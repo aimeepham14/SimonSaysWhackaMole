@@ -16,7 +16,7 @@ Can you help Simon pop the mole back into the hole? the There are 4 moles in 4 d
 ### MVP
 * Create the whack a mole setting background
 * Render a start screen with the instructions and a start button
-* Render the mole to "pop up" out of the hole/light up somehow
+* Render the hole to light up somehow
 * Render a random series of the different moles sequence
 * Render the ability for the player to click and copy the exact sequence during each round
 * Everytime a round ends the round counter should increase by 1
@@ -27,7 +27,7 @@ Can you help Simon pop the mole back into the hole? the There are 4 moles in 4 d
 
 ### Stretch Goals
 * Set a countdown timer
-* Set the interval for the mole color to pop up quicker every 10 additional sequences
+* Create an animation so a mole actually pops up
 * Set a "highest score" counter
 * Creating a cool mouse cursor that looks like a hammer
 

@@ -12,6 +12,8 @@ const currentCount = document.querySelector('.js-counter');
 
 const buttonContainer = document.querySelector('.js-container');
 
+const restartButton = document.querySelector('#restart');
+
 
 //Creating restart button
 function restartGame(text) {
@@ -20,12 +22,18 @@ function restartGame(text) {
     playerSequence = [];
     round = 0;
     buttonContainer.classList.add('dont-click');
+    
+}
+
+function resetGame () {
+    buttonContainer.classList.add('dont-click');
+    currentCount.textContent = "Round: ";
+
 }
 
 //to indicate that the computer is finished and it's the player's turn
 function playerTurn(round) {
     buttonContainer.classList.remove('dont-click');
-    // info.textContent = `Your turn: ${round}' Tap${round > 1 ? 's' : ''}`;
 }
 
 // making the computer creating random combinations for the sequence
@@ -111,6 +119,7 @@ function startGame() {
 }
 
 startButton.addEventListener('click', startGame);
+restartButton.addEventListener('click', resetGame);
 //detecting whehter to move to the next round or end game
 buttonContainer.addEventListener('click', event => {
     const { tile } = event.target.dataset;
