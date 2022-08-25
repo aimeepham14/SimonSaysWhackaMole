@@ -117,13 +117,13 @@ h2 {
   display:grid;
   grid-template-columns: 200px 200px;
   grid-row: auto auto;
-  grid-column-gap: 50px;
+  grid-column-gap: 40px;
   grid-row-gap: 20px;
 
 }
 
 .mole-button-one {
-  background: url('https://i.imgur.com/gxSkXY3.png') bottom center no-repeat;
+  background: url('https://i.imgur.com/0ndbzND.png') bottom center no-repeat;
   background-size: 200px;
   background-position-x: center;
   background-position-y: center;
@@ -131,7 +131,7 @@ h2 {
 }
 
 .mole-button-two {
-  background: url('https://i.imgur.com/WA3hCjZ.png') bottom center no-repeat;
+  background: url('https://i.imgur.com/UZAA0zu.png') bottom center no-repeat;
   background-size: 200px;
   background-position-x: center;
   background-position-y: center;
@@ -139,7 +139,7 @@ h2 {
 }
 
 .mole-button-three {
-  background: url('https://i.imgur.com/Og89fIb.png') bottom center no-repeat;
+  background: url('https://i.imgur.com/Ozjv6qb.png') bottom center no-repeat;
   background-size: 200px;
   background-position-x: center;
   background-position-y: center;
@@ -147,7 +147,7 @@ h2 {
 }
 
 .mole-button-four {
-  background: url('https://i.imgur.com/6EfK8sl.png') bottom center no-repeat;
+  background: url('https://i.imgur.com/Kivuylx.png') bottom center no-repeat;
   background-size: 200px;
   background-position-x: center;
   background-position-y: center;
