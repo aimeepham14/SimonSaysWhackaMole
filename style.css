@@ -1,132 +1,133 @@
 body {
-    background-image: url(https://i.imgur.com/XI3RqSf.jpg);
-    top: 0;
-    width: 100%;
-    height: 100%
+  background-image: url(https://i.imgur.com/XI3RqSf.jpg);
+  top: 0;
+  width: 100%;
+  height: 100%
     
   }
 
 h1 {
-    font-family: 'Freckle Face', cursive;
-    text-align: center;
-    font-size: 40px;
-    color: #9f5a3e
+  font-family: 'Freckle Face', cursive;
+  text-align: center;
+  font-size: 40px;
+  color: #9f5a3e
 }
 
 h2 {
-    font-family: 'Slackey', cursive;
-    text-align: center;
-    color: rgb(225, 114, 114);
-    font-size: 20px;
-    position: relative;
+  font-family: 'Slackey', cursive;
+  text-align: center;
+  color: rgb(225, 114, 114);
+  font-size: 20px;
+  position: relative;
 }
 
 .game-board {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 3%);
-    /* cursor: url('https://i.imgur.com/VJpre5vt.png'), pointer; */
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 3%);
+  /* cursor: url('https://i.imgur.com/08YIE0Gs.png'), auto; */
 }
+
 
 /* Styling the Start and Reset Buttons */
 
 .button {
-    display: flex;
-    margin-left: 250px;
-    margin-right: 250px;
-    margin-bottom: 50px;
+  display: flex;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-bottom: 50px;
 }
 
 .start {
-    text-align: center;
-    font-family: 'Slackey', cursive;
-    display: inline;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;    
-    padding: 10px 20px;
-    font-size: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 px #999;
+  text-align: center;
+  font-family: 'Slackey', cursive;
+  display: inline;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;    
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 px #999;
 }
 
 .start:hover {background-color: #3e8e41}
 
 .start:active {
-    background-color: #3e8341;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+  background-color: #3e8341;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 #restart {
-    text-align: center;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;    
-    font-family: 'Slackey', cursive;
-    display: inline;
-    padding: 10px 20px;
-    font-size: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #e68c58;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 px #999;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;    
+  font-family: 'Slackey', cursive;
+  display: inline;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #e68c58;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 px #999;
 }
 
 #restart:hover {background-color: #d78560}
 
 #restart:active {
-    background-color: #bb5008;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+  background-color: #bb5008;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 /* Styling the Round Counter */
 
 .current-count {
-    font-family: 'Freckle Face', cursive;
-    text-align: center;
-    font-size: 40px;
-    line-height: 15px;
-    color: rgb(218, 62, 62);
-    padding: 20px 50px 50px 50px;
-    transform: translate(0%, -35%);
+  font-family: 'Freckle Face', cursive;
+  text-align: center;
+  font-size: 40px;
+  line-height: 15px;
+  color: rgb(218, 62, 62);
+  padding: 20px 50px 50px 50px;
+  transform: translate(0%, -35%);
 }
 
 
 /* Mole holes */
 
 .button-container {
-    margin: 0 auto;
-    width:400px;
-    height:400px;
-    display:grid;
-    grid-template-columns: 200px 200px;
-    grid-row: auto auto;
-    grid-column-gap: 50px;
-    grid-row-gap: 20px;
+  margin: 0 auto;
+  width:400px;
+  height:400px;
+  display:grid;
+  grid-template-columns: 200px 200px;
+  grid-row: auto auto;
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
 
 }
 
 .mole-button-one {
-    background: url('https://i.imgur.com/gxSkXY3.png') bottom center no-repeat;
-    background-size: 200px;
-    background-position-x: center;
-    background-position-y: center;
-    transition: 0.15s;
+  background: url('https://i.imgur.com/gxSkXY3.png') bottom center no-repeat;
+  background-size: 200px;
+  background-position-x: center;
+  background-position-y: center;
+  transition: 0.15s;
 }
 
 .mole-button-two {
@@ -155,10 +156,10 @@ h2 {
 
 
 .dont-click {
-    pointer-events: none;
+  pointer-events: none;
 }
 
-/* TESTING */
+
 
 .mole-button-one:active,
 .mole-button-one.activated {

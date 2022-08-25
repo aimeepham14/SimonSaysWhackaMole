@@ -16,8 +16,7 @@ const restartButton = document.querySelector('#restart');
 
 
 //Creating restart button
-function restartGame(text) {
-    alert(text);
+function restartGame() {
     computerSequence = [];
     playerSequence = [];
     round = 0;
@@ -25,7 +24,7 @@ function restartGame(text) {
 
 function resetGame () {
     buttonContainer.classList.add('dont-click');
-    currentCount.textContent = "Round: ";
+    currentCount.textContent = "Game over! Press start";
     round = 0;
     computerSequence = [];
     playerSequence = [];
@@ -97,7 +96,7 @@ function handleClick(tile) {
 
 //restart game if the player does not match computer
     if(playerSequence[index] !== computerSequence[index]) {
-        restartGame('Game over, try again!');
+        resetGame();
         return;
     }
 
