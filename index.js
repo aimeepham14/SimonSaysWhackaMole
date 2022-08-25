@@ -31,6 +31,15 @@ function resetGame () {
     startButton.addEventListener('click', startGame);
 }
 
+function finishedGame() {
+    buttonContainer.classList.add('dont-click');
+    currentCount.textContent = "Congrats you finished the game!";
+    round = 0;
+    computerSequence = [];
+    playerSequence = [];
+    startButton.addEventListener('click', startGame);
+}
+
 //to indicate that the computer is finished and it's the player's turn
 function playerTurn(round) {
     buttonContainer.classList.remove('dont-click');
@@ -102,7 +111,7 @@ function handleClick(tile) {
 
     if (playerSequence.length === computerSequence.length) {
         if (playerSequence.length === 20) {
-            restartGame('Congrats! You completed all the rounds');
+            finishedGame();
             return
         }
         playerSequence = [];
