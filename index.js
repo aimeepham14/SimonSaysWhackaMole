@@ -28,7 +28,9 @@ function restartGame(text) {
 function resetGame () {
     buttonContainer.classList.add('dont-click');
     currentCount.textContent = "Round: ";
-
+    round = 0;
+    computerSequence = [];
+    playerSequence = [];
 }
 
 //to indicate that the computer is finished and it's the player's turn
