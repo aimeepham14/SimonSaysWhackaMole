@@ -21,8 +21,6 @@ function restartGame(text) {
     computerSequence = [];
     playerSequence = [];
     round = 0;
-    buttonContainer.classList.add('dont-click');
-    
 }
 
 function resetGame () {
@@ -31,6 +29,7 @@ function resetGame () {
     round = 0;
     computerSequence = [];
     playerSequence = [];
+    startButton.addEventListener('click', startGame);
 }
 
 //to indicate that the computer is finished and it's the player's turn
@@ -118,6 +117,7 @@ function handleClick(tile) {
 
 function startGame() {
     nextRound();
+    startButton.removeEventListener('click', startGame);
 }
 
 startButton.addEventListener('click', startGame);
