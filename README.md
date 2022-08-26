@@ -1,4 +1,4 @@
-#### **SIMON SAYS WHACK A MOLE**
+#### SIMON SAYS WHACK A MOLE
 
 Demo: https://aimeepham14.github.io/SimonSaysWhackaMole/
 
@@ -17,14 +17,13 @@ Can you help Simon pop the mole back into the hole? the There are 4 moles in 4 d
 
 ### MVP
 * Create the whack a mole setting background
-* Render a start screen with the instructions and a start button
+* Creating a start and restart button 
 * Render the hole to light up somehow
 * Render a random series of the different moles sequence
 * Render the ability for the player to click and copy the exact sequence during each round
 * Everytime a round ends the round counter should increase by 1
 * A message should pop up if the player loses
 * The player should be able to restart
-
 
 
 ### Stretch Goals
@@ -34,5 +33,8 @@ Can you help Simon pop the mole back into the hole? the There are 4 moles in 4 d
 * Creating a cool mouse cursor that looks like a hammer
 
 ### Any Potential Roadblocks
-* The visual of the "moles popping up" may not look right
 * The computer not accepting the player's sequence
+* The computer not knowing if the player's sequence is correct
+
+### Credits/Sources
+* Player's sequence function from this Simon Game tutorial https://freshman.tech/simon-game/
