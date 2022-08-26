@@ -1,5 +1,7 @@
 #### **SIMON SAYS WHACK A MOLE**
 
+Demo: https://aimeepham14.github.io/SimonSaysWhackaMole/
+
 ### What's Going On here?
 
 Can you help Simon pop the mole back into the hole? the There are 4 moles in 4 different colored holes. After the player clicks start, one of the colored moles will pop up. The player will need to "whack the mole" that popped up. After each successful round, the game will add another mole to the series which will require the player to repeat the same sequence order.

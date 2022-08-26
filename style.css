@@ -17,6 +17,7 @@ h2 {
   text-align: center;
   color: rgb(225, 114, 114);
   font-size: 20px;
+  text-shadow: #4CAF50;
   position: relative;
 }
 
@@ -116,7 +117,6 @@ h2 {
   grid-template-columns: 200px 200px;
   grid-row: auto auto;
   grid-row-gap: 20px;
-
 }
 
 .mole-button-one {
