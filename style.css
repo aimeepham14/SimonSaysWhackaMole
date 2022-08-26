@@ -31,10 +31,10 @@ h2 {
 /* Styling the Start and Reset Buttons */
 
 .button {
-  display: flex;
-  margin-left: 250px;
-  margin-right: 250px;
-  margin-bottom: 50px;
+  text-align: center;
+  line-height: 15px;
+  padding: 20px 50px 50px 50px;
+  transform: translate(0%, -35%);
 }
 
 .start {
